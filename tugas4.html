@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wardah Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Profile</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <section class="slide">
+        <div class="slide-image">Slide Image</div>
+    </section>
+
+    <section class="products">
+        <h2>Product</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <div class="image">Image</div>
+                <h3>Wardah Product 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Totam quisquam tempora error autem.</p>
+                <button>Detail</button>
+            </div>
+            <div class="product-item">
+                <div class="image">Image</div>
+                <h3>Wardah Product 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Totam quisquam tempora error autem.</p>
+                <button>Detail</button>
+            </div>
+            <div class="product-item">
+                <div class="image">Image</div>
+                <h3>Wardah Product 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Totam quisquam tempora error autem.</p>
+                <button>Detail</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="trending-products">
+        <h2>Trending Products</h2>
+        <div class="trending-list">
+            <div class="trending-item">
+                <div class="image">Image</div>
+                <p>Wardah Lipstick - 90 products</p>
+            </div>
+            <div class="trending-item">
+                <div class="image">Image</div>
+                <p>Wardah Foundation - 90 products</p>
+            </div>
+            <div class="trending-item">
+                <div class="image">Image</div>
+                <p>Wardah Skincare - 90 products</p>
+            </div>
+            <div class="trending-item">
+                <div class="image">Image</div>
+                <p>Wardah Eye Shadow - 90 products</p>
+            </div>
+            <button class="more-products">More Products</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © Produk Local 2024</p>
+    </footer>
+</body>
+</html>
+
+
+### CSS (`styles.css`)
+css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+header .search-bar {
+    display: flex;
+    gap: 5px;
+}
+
+header .search-bar input {
+    padding: 5px;
+}
+
+.slide {
+    text-align: center;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.products, .trending-products {
+    padding: 20px;
+}
+
+.products h2, .trending-products h2 {
+    margin-bottom: 20px;
+}
+
+.product-list, .trending-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.product-item, .trending-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.product-item .image, .trending-item .image {
+    background-color: #ddd;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #00bfa5;
+    color: white;
+    border: none;
